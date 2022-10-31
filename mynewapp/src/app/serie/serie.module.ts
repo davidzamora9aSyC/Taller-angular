@@ -6,6 +6,6 @@ import { SerieComponent } from './serie.component';
   imports: [
     CommonModule
   ],
-  declarations: [SerieComponent]
+
 })
 export class SerieModule { }

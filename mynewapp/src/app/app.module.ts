@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SerieComponent } from './serie/serie.component';
+import { SerieModule } from './serie/serie.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SerieComponent } from './serie/serie.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    SerieModule
   ],
   exports:[SerieComponent],
   providers: [],

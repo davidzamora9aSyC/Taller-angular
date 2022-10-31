@@ -1,3 +1,30 @@
-<p>
-  serie works!
-</p>
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th> INDEX</th>
+          <th> Name </th>
+          <th> Channel </th>
+          <th> Seasons </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let serie of series">
+          <td>
+            <dd>{{serie.index}}</dd>
+          </td>
+          <td>
+            <dd>{{serie.name}}</dd>
+          </td>
+          <td>
+            <dd>{{serie.channel}}</dd>
+          </td>
+          <td>
+            <dd>{{serie.seasons}}</dd>
+          </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
