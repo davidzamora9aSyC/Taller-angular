@@ -1,11 +1,11 @@
 export class Serie {
-  index:number;
+  id:number;
   name: string;
   channel: string;
   seasons: number;
 
-  public constructor(index: number, name: string, channel: string, seasons: number) {
-    this.index=index;
+  public constructor(id: number, name: string, channel: string, seasons: number) {
+    this.id=id;
     this.name = name;
     this.channel = channel;
     this.seasons = seasons;
