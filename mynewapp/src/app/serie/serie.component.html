@@ -1,7 +1,7 @@
-<div class="container-fluid">
+<div class="container-fluid m-5 p-5">
   <div class="col-6">
-    <table class="table table-bordered">
-      <thead>
+    <table class="table table-bordered mx-2">
+      <thead class="table-dark">
         <tr>
           <th> ID</th>
           <th> Name </th>
@@ -10,8 +10,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let serie of series">
-          <td>
+        <tr class="bg-light" *ngFor="let serie of series">
+          <td >
             <dd>{{serie.id}}</dd>
           </td>
           <td>
@@ -26,5 +26,11 @@
       </tr>
       </tbody>
     </table>
+    <div class="row">
+      <div class="mx-2">
+        El promedio de temporadas es: {{promedio}}
+      </div>
+
+    </div>
   </div>
 </div>
